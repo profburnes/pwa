@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Service Worker e PWA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Teste de Service Worker e Progressive Web Apps">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="images/favicon.png" rel="icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="manifest" href="manifest.json">
+
+  <script type="text/javascript">
+  if (window.location.protocol != "https:") {
+      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+  }
+  </script>
+</head>
+<body>
+ 	<header class="header">
+    <a href="index.php" class="header-logo" title="Vida de Programador"  tabindex="0">
+      <img src="images/logo.png" title="Vida de Programador">
+    </a>
+
+    <button type="button" class="header-nav" name="nav" aria-label="Mostrar Menu">
+     <label for="navicon" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+     </label>
+    </button>
+
+    <nav class="header-menu">
+      <ul>
+        <li>
+          <a href="https://www.vidadeprogramador.store" title="Loja">Loja Vida de Programador</a>
+        </li>
+        <li>
+          <a href="https://github.com/profburnes" title="GitHub">GitHub</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article></article>
+
+    <hr>
+    <a href="https://www.lojavidadeprogramador.store" title="Loja Vida de Programador" target="_blank" rel="noreferrer">
+      <img src="images/banner.jpg" alt="Loja Vida de Programador" class="img-fluid">
+    </a>
+  </main>
+
+  <footer>
+    <p>Exemplo Service Workers com PWA</p>
+  </footer>
+
+  <div id="a2hs">
+    <p class="text-center">Deseja adicionar a tela principal como um APP?</p>
+    <p class="text-center">
+      <button type="button" id="btnAdd" name="btnAdd" aria-label="Adicionar">Adicionar</button>
+      <button type="button" id="btnDis" name="btnDis" aria-label="Fechar">Fechar</button><br>
+      <button type="button" id="btnNot" aria-label="Permitir Notificações" onclick="askNotification()">Permitir Notificações</button>
+    </p>
+  </div>
+
+	<script src="js/init.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

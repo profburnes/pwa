@@ -1,0 +1,30 @@
+{
+  "short_name": "VDP PWA",
+  "name": "Tirinhas Vida de Programador",
+  "icons": [
+    {
+      "src": "images/favicon-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/favicon-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/favicon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/favicon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#333",
+  "display": "standalone",
+  "theme_color": "#333"
+}
